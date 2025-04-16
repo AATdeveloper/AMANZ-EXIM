@@ -1,0 +1,229 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    color: #d0a3a3; /* Dark text for better readability */
+    line-height: 1.6;
+  }
+  
+  /* Background Image for the Main Body */
+  body {
+    background-image: url('images/background\ image.jpg'); /* Light background image */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #333; /* Dark text */
+  }
+  
+  /* Header Styles */
+  header {
+    background: rgba(233, 216, 216, 0.7); /* Semi-transparent dark background for header */
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #fff; /* White text for contrast */
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    list-style: none;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6347; /* Tomato color on hover */
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Main Content Section */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  /* Logo Container */
+.logo-container {
+    display: flex;                  /* Flexbox to center the logo */
+    justify-content: center;        /* Center logo horizontally */
+    align-items: left;            /* Center logo vertically */
+    height: 10vh;                  /* Full viewport height */
+    width: 10%;                    /* Take full width of parent container */
+  }
+  
+  /* Logo Image */
+  .logo {
+    max-width: 100%;                 /* Ensure the logo takes up no more than 100% of its container's width */
+    height: auto;                   /* Maintain the aspect ratio */
+    max-height: 300px;              /* Maximum height of the logo */
+    object-fit: contain;            /* Ensures the logo is fully contained within the bounds without distortion */
+    transition: transform 0.3s ease; /* Smooth transition when hovering */
+  }
+  
+  /* Logo Hover Effect (Optional) */
+  .logo:hover {
+    transform: scale(1.1);          /* Slight zoom effect when hovering over the logo */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #333; /* Dark text for headings */
+  }
+  
+  .blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .post {
+    background: rgba(255, 255, 255, 0.9); /* Light background for posts */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .post:hover {
+    transform: translateY(-10px);
+  }
+  
+  .post img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .post h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #333; /* Dark text for post titles */
+  }
+  
+  .post a {
+    color: #333; /* Dark color for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .post a:hover {
+    color: #ff6347; /* Tomato color on hover */
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    background-color: #333; /* Dark footer */
+    padding: 15px;
+    color: white;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
+  /* Contact Form Styling */
+  form {
+    background: rgba(255, 255, 255, 0.9); /* Light background with transparent overlay */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  form label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333; /* Dark text for form labels */
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 12px 20px;
+    background-color: #d79999; /* Dark button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #ff6347; /* Tomato color on hover */
+  }
+  
+  /* WhatsApp Button */
+  .whatsapp-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .whatsapp-btn a {
+    text-decoration: none;
+    background-color: #25D366;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .whatsapp-btn a:hover {
+    background-color: #128c7e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .blog-posts {
+      grid-template-columns: 1fr;
+    }
+  
+    header h1 {
+      font-size: 28px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo-container">
+        <img src="/css/images/logo.jpeg" alt="Company Logo" class="logo">
+    </div>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="certificates-membership.html" class="active">Certificates & Memberships</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <div class="container">
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form action="submit_form.php" method="post">
+        <div>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h3>Our Office</h3>
+      <ul>
+        <li><strong>Email:</strong> info@yourcompany.com</li>
+        <li><strong>Phone:</strong> +91 9998340750</li>
+        <li><strong>Address:</strong> 1234 Street, City, Country</li>
+      </ul>
+    </div>
+    <div>
+        <a href="https://wa.me/9998340750" target="_blank">
+            <img src="/css/images/whatsapp.jpg" alt="Chat with us on WhatsApp">
+          </a>
+          
+    </div>
+
+   
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <!-- <script>
+    function initMap() {
+      // Create a map centered at your location
+      const location = { lat: 37.7749, lng: -122.4194 }; // Example coordinates (San Francisco)
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 14,
+        center: location,
+      });
+      const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: "Your Company Location",
+      });
+    }
+  </script> -->
+
+</body>
+</html>
